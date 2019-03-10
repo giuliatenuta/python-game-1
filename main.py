@@ -1,8 +1,8 @@
-class Entity:
-  def __init__(self, x, y, graphic):
-    self.x = x
-    self.y = y
-    self.graphic = graphic
+class Player():
+  def __init__(self,x,y,graphic):
+    self.graphic=graphic
+    self.x=x
+    self.y=y
 
 class Level:
   def __init__(self, w, h):
@@ -26,9 +26,11 @@ class Level:
       print()
 
 player = Entity(1, 3, "P")
+'''
 monster = Entity(3, 4, "M")
 level = Level(10, 10)
 
 level.add_entities([player, monster])
 
 level.draw()
+'''
